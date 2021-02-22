@@ -25,7 +25,7 @@ def run_file_(file_path):
     globals_ = globals()
     globals_["__file__"] = path_
     globals_["__package__"] = os.path.dirname(file_path)
-    globals_["__program_context__"] = "unreal"
+    globals_["__program_context__"] = "ue4"
     exec(open(path_).read(), globals_)
 
 run_file_(path() + "\\libs\\python\\startup\\__init__.py")
