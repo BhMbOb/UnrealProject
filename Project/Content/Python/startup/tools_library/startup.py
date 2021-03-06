@@ -28,4 +28,4 @@ def run_file_(file_path):
     globals_["__program_context__"] = "ue4"
     exec(open(path_).read(), globals_)
 
-run_file_(path() + "\\libs\\python\\startup\\__init__.py")
+run_file_(path() + "\\scripts\\startup\\__init__.py")
